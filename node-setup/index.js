@@ -1,5 +1,6 @@
 import express from "express";
 import { users } from "./models/users.js";
+import { posts } from "./models/posts.js";
 
 const app = express();
 const port = 4000;
@@ -28,9 +29,9 @@ app.get("/users/:username", (request, response) => {
   }
 });
 
-app.listen(port, function () {
-  console.log(`I am running at port ${port}`);
-});
+app.listen(4000, function () {
+  console.log("I am running at port 4000")
+})
 
 /* 
 Http method
